@@ -15,15 +15,7 @@ A simple, interactive "Library" web application built as part of [The Odin Proje
 - HTML5
 - CSS3 (Flexbox/Grid)
 - Vanilla JavaScript (ES6)
-- localStorage API
 
-## What I Learned
-
-- Working with JavaScript objects and arrays.
-- Dynamically creating and removing DOM elements.
-- Using `localStorage` to persist data across page reloads.
-- Handling forms and user events (clicks, submits).
-- Organizing code with constructor functions or classes.
 
 ## Installation & Usage
 
