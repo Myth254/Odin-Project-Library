@@ -1,21 +1,18 @@
 # Odin Project Library
 
-A simple, interactive "Library" web application built as part of [The Odin Project](https://www.theodinproject.com/) curriculum. This project focuses on practicing object-oriented JavaScript, DOM manipulation, and local data management.
+A simple, interactive "Library" web application built as part of [The Odin Project](https://www.theodinproject.com/) curriculum. This project focuses on practicing object-oriented JavaScript and DOM manipulation.
 
 ## Features
 
 - 📚 **Add new books** with title, author, number of pages, and read status.
 - 🗑️ **Remove books** from your library.
 - ✅ **Toggle read status** for any book.
-- 💾 **Persistent data** (books are saved in your browser's `localStorage`).
-- 📱 **Responsive design** that works on desktop and mobile devices.
 
 ## Technologies Used
 
 - HTML5
 - CSS3 (Flexbox/Grid)
 - Vanilla JavaScript (ES6)
-
 
 ## Installation & Usage
 
