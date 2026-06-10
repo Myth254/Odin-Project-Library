@@ -2,8 +2,7 @@
 
 A dynamic library management web app built with vanilla JavaScript as part of [The Odin Project](https://www.theodinproject.com/) curriculum. Add, remove, and track your reading progress with persistent in-memory storage.
 
-![Library App Preview](https://via.placeholder.com/800x400?text=Library+App+Screenshot)
-<img width="1914" height="960" alt="Screenshot from 2026-06-10 18-10-41" src="https://github.com/user-attachments/assets/0d7f0046-e05f-4664-b450-13a0d444c7ae" />
+![Library App Preview](<img width="1914" height="960" alt="Screenshot from 2026-06-10 18-10-41" src="https://github.com/user-attachments/assets/0d7f0046-e05f-4664-b450-13a0d444c7ae" />)
 
 ## ✨ Live Features
 
