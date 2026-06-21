@@ -17,32 +17,40 @@ cancelBtn.addEventListener('click', () => {
     bookForm.reset();
 });
 
+class Book {
+    #id
+    constructor(title, author, pages, read) {
+        this.#id = crypto.randomUUID()
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
+
+    // makes it read only
+    get id() {
+        return this.#id
+    }
+
+    static create(title, author, pages, read) {
+        const bookInstance = new Book(title, author, pages, read)
+        myLibrary.push(bookInstance)
+    }
+
+    toggleRead = function() {
+      if (this.read === "Read") {
+        this.read = "Not Read";
+      } else {
+        this.read = "Read";
+      }
+    }
+}
+
 const myLibrary = [
     new Book('The Hobbit', 'J.R.R. Tolkien', 310, 'Read'),
     new Book('Dune', 'Frank Herbert', 412, 'Read'),
     new Book('1984', 'George Orwell', 328, 'Not Read')
 ];
-
-function Book(title, author, pages, read) {
-    this.id = crypto.randomUUID()
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
-}
-
-Book.prototype.toggleRead = function() {
-  if (this.read === "Read") {
-    this.read = "Not Read";
-  } else {
-    this.read = "Read";
-  }
-};
-
-function addBookToLibrary(title, author, pages, read) {
-    const bookInstance = new Book(title, author, pages, read)
-    myLibrary.push(bookInstance)
-}
 
 const displayBooks = () => {
     bookList.innerHTML = "";
@@ -119,7 +127,7 @@ submitBookBtn.addEventListener('click', (e) => {
     const pages = bookPages.value
     const readChoice = checkedRadio.value
 
-    addBookToLibrary(title, author, pages, readChoice)
+    Book.create(title, author, pages, readChoice)
     dialog.close()
     bookForm.reset()
     displayBooks()
